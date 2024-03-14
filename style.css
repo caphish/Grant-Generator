@@ -1,0 +1,58 @@
+.logo{
+    font-size: 2em;
+    background-color: blanchedalmond;
+    display: block;
+    color: orange;
+    user-select: none;
+    box-shadow: 2px 2px 5px rgb(166, 115, 20) ;
+
+}
+.logo2{
+    font-size: 2em;
+    background-color: chocolate;
+    font-family: monospace;
+    display: block;
+    color: black;
+    box-shadow: 1px 1px 5px burlywood;
+    text-align: center;
+
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: cornsilk;
+}
+
+.grant-chart {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    display: block;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    
+}
+.task {
+    margin-bottom: 10px;
+}
+.task-name {
+    font-weight: bold;
+}
+.task-bar {
+    background-color: #007bff;
+    height: 20px;
+    margin-top: 5px;
+    position: relative;
+}
+.dependency-line {
+    border-left: 2px solid #007bff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+.form-container{
+    
+    background-color: azure;
+    max-width: 300px;
+    margin: auto;
+}

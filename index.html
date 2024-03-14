@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grant Chart Generator</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="grant-chart">
+    <h2 class="logo">Grant Chart</h2>
+    <?php include 'grant_generator.php'; ?>
+</div>
+
+<div class="form-container">
+    <h2 class="logo2">Input Tasks</h2>
+    <form method="post" action="generate_chart.php">
+        <div class="form-group">
+            <label for="task">Task Name:</label>
+            <input type="text" id="task" name="tasks[]" required>
+        </div>
+        <div class="form-group">
+            <label for="start_date">Start Date:</label>
+            <input type="date" id="start_date" name="start_dates[]" required>
+        </div>
+        <div class="form-group">
+            <label for="end_date">End Date:</label>
+            <input type="date" id="end_date" name="end_dates[]" required>
+        </div>
+        <div class="form-group">
+            <label for="dependency">Dependency (optional):</label>
+            <input type="date" id="dependency" name="dependencies[]">
+        </div>
+        <button type="submit">Add Task</button>
+    </form>
+</div>
+
+</body>
+</html>
